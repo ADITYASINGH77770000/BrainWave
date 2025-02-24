@@ -1,0 +1,18 @@
+credentials:
+  usernames:
+    aditya:
+      email: adssingh9090@gmail.com
+      name:  aditya
+      password: 6MonkeysRLooking^  # This is a hashed password
+    user:
+      email: user12@gmail.com
+      name: user
+      password: 30@april2004  # This is a hashed password
+cookie:
+  expiry_days: 30
+  key: some_signature_key_replace_this
+  name: streamlit_auth_cookie
+preauthorized:
+  emails:
+  - adssingh9090@gmail.com
+  - user12@gmail.com.com
