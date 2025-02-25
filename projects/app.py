@@ -34,7 +34,7 @@ if st.session_state.logged_in:
         "About": [About]
     })
     
-    st.logo("assets/web.jpeg") # Raw string for the file path
+    st.logo("assets/web.jpeg",size="medium",link=None) # Raw string for the file path
     pg.run()
     
     # Add logout button to the sidebar
