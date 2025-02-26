@@ -1,5 +1,8 @@
 # 🚀 BrainWave AI Bot
 
+![web](https://github.com/user-attachments/assets/fad3e25d-2220-4c51-b022-18d77a039aef)
+
+
 ## 🎯 Overview
 BrainWave AI Bot is an advanced **AI-powered educational assistant** built using **Generative AI (Gemini API)**. This intelligent bot is designed to enhance the learning experience by providing real-time assistance across multiple domains, including **Q/A, Image Generation, Video & Image Summarization, Code Generation, and Learning Path Guidance**.
 
