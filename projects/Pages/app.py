@@ -29,14 +29,14 @@ def logout():
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 
-# Set up navigation based on login status
-if st.session_state.logged_in:
-    # Show logo at top of page
-    st.image(
-        "C:/Users/Admin/Desktop/Image Generator gen ai/projects/assets/web.jpeg", 
-        use_column_width=False,
-        width=200
-    )
+# # Set up navigation based on login status
+# if st.session_state.logged_in:
+#     # Show logo at top of page
+#     st.image(
+#         "C:/Users/Admin/Desktop/Image Generator gen ai/projects/assets/web.jpeg", 
+#         use_column_width=False,
+#         width=200
+#     )
 
     # Display navigation
     pg = st.navigation({
