@@ -2,6 +2,7 @@ import streamlit as st
 import os
 import sys
 
+
 # Add the parent directory of Pages to the Python path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
@@ -29,16 +30,8 @@ def logout():
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 
-# # Set up navigation based on login status
-# if st.session_state.logged_in:
-#     # Show logo at top of page
-#     st.image(
-#         "C:/Users/Admin/Desktop/Image Generator gen ai/projects/assets/web.jpeg", 
-#         use_column_width=False,
-#         width=200
-#     )
-
-    # Display navigation
+# Set up navigation based on login status
+if st.session_state.logged_in:
     pg = st.navigation({
         "Main": [introduction],
         "Tools": [qa_bot, code_gen, image_gen, art_gen, Video],
@@ -46,13 +39,13 @@ if "logged_in" not in st.session_state:
         "Feedback": [feedback],
         "About": [About]
     })
-
+    
+    st.logo("C:/Users/Admin/Desktop/Image Generator gen ai/projects/assets/web.jpeg") # Raw string for the file path
     pg.run()
-
-    # Add logout button in the sidebar
+    
+    # Add logout button to the sidebar
     with st.sidebar:
         if st.button("Logout"):
             logout()
-
 else:
     login.app()
