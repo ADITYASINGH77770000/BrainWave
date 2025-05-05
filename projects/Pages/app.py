@@ -31,6 +31,14 @@ if "logged_in" not in st.session_state:
 
 # Set up navigation based on login status
 if st.session_state.logged_in:
+    # Show logo at top of page
+    st.image(
+        "C:/Users/Admin/Desktop/Image Generator gen ai/projects/assets/web.jpeg", 
+        use_column_width=False,
+        width=200
+    )
+
+    # Display navigation
     pg = st.navigation({
         "Main": [introduction],
         "Tools": [qa_bot, code_gen, image_gen, art_gen, Video],
@@ -38,13 +46,13 @@ if st.session_state.logged_in:
         "Feedback": [feedback],
         "About": [About]
     })
-    
-    st.logo("C:/Users/Admin/Desktop/Image Generator gen ai/projects/assets/web.jpeg") # Raw string for the file path
+
     pg.run()
-    
-    # Add logout button to the sidebar
+
+    # Add logout button in the sidebar
     with st.sidebar:
         if st.button("Logout"):
             logout()
+
 else:
     login.app()
